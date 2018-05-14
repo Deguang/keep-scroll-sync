@@ -1,0 +1,19 @@
+{
+    "name": "Keep scroll sync",
+    "description": "It's an extension for keep scroll position cross platform.",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "browser_action":{
+        "default_popup": "index.html",
+        "default_icon": "logo.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens index.html"
+        }
+    }
+}
