@@ -1,7 +1,7 @@
 function getCurrentScrollInfo() {
     var contentHeight = document.body.clientHeight,
         scrollTop = document.documentElement.scrollTop,
-        scrollPercent = (contentHeight / scrollTop * 100).toFixed(2) + '%'
+        scrollPercent = (scrollTop / contentHeight).toFixed(4)
 
     console.log(contentHeight, scrollTop, scrollPercent)
     return {contentHeight, scrollTop, scrollPercent}
@@ -24,7 +24,7 @@ window.onload = function() {
 
         // current page scroll progress equal the value saved in storage， return
         if(historyScrollInfo.scrollPercent == currentScrollInfo.scrollPercent) return;
-        var r = confirm('Scroll to ' + historyScrollInfo.scrollPercent + '?');
+        var r = confirm('Scroll to ' + historyScrollInfo.scrollPercent * 100 + '% ?');
         if(r == true) {
             document.documentElement.scrollTop = currentScrollInfo.contentHeight * historyScrollInfo.scrollPercent;
         } else {
