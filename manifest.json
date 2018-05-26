@@ -15,5 +15,15 @@
             },
             "description": "Opens index.html"
         }
-    }
+    },
+    "permissions": [
+        "tabs", "activeTab", "storage", "background", "contentSettings"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"],
+            "run_at": "document_end"
+        }
+    ]
 }
