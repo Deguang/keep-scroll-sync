@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function () {
                     setContent('.' + item, response[item])
                 });
                 chrome.storage.sync.set({[url]:
-                    {id, title, url, favIconUrl, ...response}}, function() {
+                    JSON.stringify({id, title, url, favIconUrl, ...response})}, function() {
                     console.log('page scroll saved~')
                 })
             });
