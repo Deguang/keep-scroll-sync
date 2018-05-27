@@ -1,11 +1,11 @@
 {
     "name": "Keep scroll sync",
     "description": "It's an extension for keep scroll position cross platform.",
-    "version": "0.0.1",
+    "version": "0.0.1.1",
     "manifest_version": 2,
     "browser_action":{
         "default_popup": "index.html",
-        "default_icon": "logo.png"
+        "default_icon": "./images/logo.png"
     },
     "commands": {
         "_execute_browser_action": {
@@ -22,7 +22,7 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["content-script.js"],
+            "js": ["./js/content-script.js"],
             "run_at": "document_end"
         }
     ]
