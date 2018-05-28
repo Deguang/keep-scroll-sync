@@ -2,8 +2,9 @@ function setContent(querySelector, value) {
     document.querySelector(querySelector).innerHtml += value
 }
 
-// Once the DOM is ready...
-window.addEventListener('DOMContentLoaded', function () {
+// save scroll history
+document.querySelector('.save-scroll').addEventListener('click', function(){
+// window.addEventListener('DOMContentLoaded', function () {
     // ...query for the active tab...
     chrome.tabs.query({
         active: true,
@@ -30,6 +31,19 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     );
 });
+
+// delete scroll hisotry
+document.querySelector('.del-scroll').addEventListener('click', function() {
+    // ...query for the active tab...
+    chrome.tabs.query({
+        active: true,
+        currentWindow: true
+    }, function (tabs) {
+        chrome.storage.sync.remove(tabs[0].url, function() {
+            console.log('page scroll history removed~!')
+        })
+    })
+})
 
 chrome.storage.onChanged.addListener(function(changes, namespace) {
     for (key in changes) {
