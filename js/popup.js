@@ -18,10 +18,10 @@ window.addEventListener('DOMContentLoaded', function () {
             //    from the receiving end (content script)
             function(response){
                 console.log('response', response)
-                Object.keys(response).forEach(function(item) {
-                    console.log(item, response[item])
-                    setContent('.' + item, response[item])
-                });
+                // Object.keys(response).forEach(function(item) {
+                //     console.log(item, response[item])
+                //     setContent('.' + item, response[item])
+                // });
                 chrome.storage.sync.set({[url]:
                     JSON.stringify({id, title, url, favIconUrl, ...response})}, function() {
                     console.log('page scroll saved~')
