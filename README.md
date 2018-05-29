@@ -6,3 +6,7 @@ This extension has been published on chrome webstore: [keep scroll sync](https:/
 
 #### Roadmap
 [release 0.1.0.0](https://github.com/Deguang/keep-scroll-sync/issues/1)
+
+
+#### License
+[MIT](LICENSE)
