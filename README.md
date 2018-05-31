@@ -1,8 +1,9 @@
 ## Introduce
 
 It's an extension for keep scroll position cross platform(via chrome account).
+这是一个跨设备同步 Chrome 页面浏览进度的插件。
 
-This extension has been published on chrome webstore: [keep scroll sync](https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl)
+This extension has been published on chrome webstore（Chrome 商店地址）: [keep scroll sync](https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl)
 
 
 ## Roadmap
