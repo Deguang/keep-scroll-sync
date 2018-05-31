@@ -2,8 +2,9 @@ function setContent(querySelector, value) {
     document.querySelector(querySelector).innerHtml += value
 }
 
+const saveBtn = document.querySelector('.save-scroll');
 // save scroll history
-document.querySelector('.save-scroll').addEventListener('click', function(){
+saveBtn.addEventListener('click', function(){
 // window.addEventListener('DOMContentLoaded', function () {
     // ...query for the active tab...
     chrome.tabs.query({
@@ -23,24 +24,36 @@ document.querySelector('.save-scroll').addEventListener('click', function(){
                 //     console.log(item, response[item])
                 //     setContent('.' + item, response[item])
                 // });
-                chrome.storage.sync.set({[url]:
-                    JSON.stringify({id, title, url, favIconUrl, ...response})}, function() {
-                    console.log('page scroll saved~')
-                })
-            });
-        }
-    );
+                chrome.storage.sync.set({
+                    [url]: JSON.stringify({id, title, url, favIconUrl, ...response})
+                }, function() {
+                    saveBtn.innerHTML = 'scroll history saved';
+                    console.log('scroll history saved~!');
+                    setTimeout( // reset button content
+                        "saveBtn.innerHTML = 'save scroll history'",
+                        1000
+                    )
+                });
+            }
+        );
+    });
 });
 
+const delBtn = document.querySelector('.del-scroll');
 // delete scroll hisotry
-document.querySelector('.del-scroll').addEventListener('click', function() {
+delBtn.addEventListener('click', function() {
     // ...query for the active tab...
     chrome.tabs.query({
         active: true,
         currentWindow: true
     }, function (tabs) {
         chrome.storage.sync.remove(tabs[0].url, function() {
-            console.log('page scroll history removed~!')
+            delBtn.innerHTML = 'del history done~!';
+            console.log('page scroll history removed~!');
+            setTimeout( // reset button content
+                "delBtn.innerHTML = 'del scroll history'",
+                1000
+            )
         })
     })
 })
