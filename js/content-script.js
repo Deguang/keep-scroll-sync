@@ -1,3 +1,10 @@
+// Date.now hack
+if (!Date.now) {
+	Date.now = function(){
+		return (new Date()).getTime();
+	};
+}
+
 function getCurrentScrollInfo() {
     var contentHeight = document.body.clientHeight,
         scrollTop = document.documentElement.scrollTop,
@@ -22,9 +29,10 @@ window.onload = function() {
         var historyScrollInfo = JSON.parse(result[window.location.href]),
             currentScrollInfo = getCurrentScrollInfo();
 
-        // current page scroll progress equal the value saved in storage， return
+            // current page scroll progress equal the value saved in storage， return
         if(historyScrollInfo.scrollPercent == currentScrollInfo.scrollPercent) return;
-        var r = confirm('Scroll to ' + historyScrollInfo.scrollPercent * 100 + '% ?');
+
+        var r = confirm('The furthest read position is '+ historyScrollInfo.scrollPercent * 100 + '% at ' + new Date(historyScrollInfo.timeStamp || Date.now()) + '. Go to that page position?');
         if(r == true) {
             document.documentElement.scrollTop = currentScrollInfo.contentHeight * historyScrollInfo.scrollPercent;
         } else {

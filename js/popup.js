@@ -2,6 +2,13 @@ function setContent(querySelector, value) {
     document.querySelector(querySelector).innerHtml += value
 }
 
+// Date.now hack
+if (!Date.now) {
+	Date.now = function(){
+		return (new Date()).getTime();
+	};
+}
+
 const saveBtn = document.querySelector('.save-scroll');
 // save scroll history
 saveBtn.addEventListener('click', function(){
@@ -25,7 +32,7 @@ saveBtn.addEventListener('click', function(){
                 //     setContent('.' + item, response[item])
                 // });
                 chrome.storage.sync.set({
-                    [url]: JSON.stringify({id, title, url, favIconUrl, ...response})
+                    [url]: JSON.stringify({id, title, url, favIconUrl, ...response, timeStamp: Date.now()})
                 }, function() {
                     saveBtn.innerHTML = 'scroll history saved';
                     console.log('scroll history saved~!');
