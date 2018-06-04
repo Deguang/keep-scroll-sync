@@ -32,7 +32,7 @@ saveBtn.addEventListener('click', function(){
                 //     setContent('.' + item, response[item])
                 // });
                 chrome.storage.sync.set({
-                    [url]: JSON.stringify({id, title, url, favIconUrl, ...response, timeStamp: Date.now()})
+                    [url]: JSON.stringify({id, title, favIconUrl, timeStamp: Date.now(), ...response})
                 }, function() {
                     saveBtn.innerHTML = 'scroll history saved';
                     console.log('scroll history saved~!');
