@@ -1,18 +1,24 @@
 <html>
     <head>
         <style>
+            body {
+                width: 200px;
+                padding: 24px 16px;
+                box-sizing: border-box;
+            }
             .btn-wrap {
                 width: 150px;
-                padding: 20px;
-                text-align: center;
+                margin: 24px auto 32px;
             }
             button {
                 border: 1px solid #999;
                 padding: 4px 6px;
                 border-radius: 4px;
-                margin: 10px auto 0;
+                text-align: center;
                 cursor: pointer;
                 outline: none;
+                width: inherit;
+                margin: 8px auto;
             }
             button:hover {
                 color: #a5b6af;
@@ -21,6 +27,12 @@
             }
             button:active {
                 outline: none;
+            }
+            .go-issues {
+                font-size: 10px;
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
             }
         </style>
     </head>
@@ -40,7 +52,7 @@
             <button class="save-scroll">save scroll history</button>
             <button class="del-scroll">del scroll history</button>
         </div>
-        <a href="https://github.com/Deguang/keep-scroll-sync/issues" target="_blank">Some advice or feeback ?</a>
+        <a class="go-issues" href="https://github.com/Deguang/keep-scroll-sync/issues" target="_blank">Some advice or feeback ?</a>
         <script src="./js/popup.js"></script>
     </body>
 </html>

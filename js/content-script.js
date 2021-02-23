@@ -6,6 +6,7 @@ if (!Date.now) {
 }
 
 function getCurrentScrollInfo() {
+    debugger
     var contentHeight = document.body.clientHeight,
         scrollTop = document.documentElement.scrollTop,
         scrollPercent = (scrollTop / contentHeight).toFixed(4)
@@ -32,7 +33,7 @@ window.onload = function() {
             // current page scroll progress equal the value saved in storage， return
         if(historyScrollInfo.scrollPercent == currentScrollInfo.scrollPercent) return;
 
-        var r = confirm('The furthest read position is '+ historyScrollInfo.scrollPercent * 100 + '% at ' + new Date(historyScrollInfo.timeStamp || Date.now()) + '. Go to that page position?');
+        var r = confirm('The furthest read position is '+ (historyScrollInfo.scrollPercent * 100).toFixed(2) + '% at ' + new Date(historyScrollInfo.timeStamp || Date.now()).toLocaleString() + '. Go to that page position?');
         if(r == true) {
             document.documentElement.scrollTop = currentScrollInfo.contentHeight * historyScrollInfo.scrollPercent;
         } else {
