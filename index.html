@@ -1,6 +1,10 @@
 <html>
     <head>
         <style>
+            body {
+                text-align: center;
+                padding: 16px 0;
+            }
             .btn-wrap {
                 width: 150px;
                 padding: 20px;
@@ -22,6 +26,9 @@
             button:active {
                 outline: none;
             }
+            .mt16 {
+                margin-top: 16px;
+            }
         </style>
     </head>
     <body>
@@ -37,10 +44,10 @@
         </div> -->
         <!-- <p>page scroll position has been saved~!</p> -->
         <div class="btn-wrap">
-            <button class="save-scroll">save scroll history</button>
-            <button class="del-scroll">del scroll history</button>
+            <button class="save-scroll">Save scroll position</button>
+            <button class="del-scroll mt16">Del scroll history</button>
         </div>
-        <a href="https://github.com/Deguang/keep-scroll-sync/issues" target="_blank">Some advice or feeback ?</a>
+        <a class="feedback mt16" href="https://github.com/Deguang/keep-scroll-sync/issues" target="_blank">Some advice or feedback ?</a>
         <script src="./js/popup.js"></script>
     </body>
 </html>

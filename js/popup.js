@@ -34,10 +34,10 @@ saveBtn.addEventListener('click', function(){
                 chrome.storage.sync.set({
                     [url]: JSON.stringify({id, title, favIconUrl, timeStamp: Date.now(), ...response})
                 }, function() {
-                    saveBtn.innerHTML = 'scroll history saved';
-                    console.log('scroll history saved~!');
+                    saveBtn.innerHTML = 'Scroll position saved';
+                    console.log('Scroll position saved~!');
                     setTimeout( // reset button content
-                        "saveBtn.innerHTML = 'save scroll history'",
+                        () => {saveBtn.innerHTML = 'Save scroll position'},
                         1000
                     )
                 });
@@ -55,10 +55,10 @@ delBtn.addEventListener('click', function() {
         currentWindow: true
     }, function (tabs) {
         chrome.storage.sync.remove(tabs[0].url, function() {
-            delBtn.innerHTML = 'del history done~!';
-            console.log('page scroll history removed~!');
+            delBtn.innerHTML = 'Del history done~!';
+            console.log('Page scroll history removed~!');
             setTimeout( // reset button content
-                "delBtn.innerHTML = 'del scroll history'",
+                () => {delBtn.innerHTML = 'Del scroll history'},
                 1000
             )
         })
