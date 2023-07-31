@@ -40,5 +40,6 @@
             "run_at": "document_end"
         }
     ],
-    "default_locale": "en"
+    "default_locale": "en",
+    "update_url": "http://clients2.google.com/service/update2/crx?response=updatecheck&id%3Dfpbpmnlgndlolnnbboiongdjanhdbaic%26uc"
 }
