@@ -37,30 +37,33 @@ function showRestorePrompt(historyScrollInfo, onConfirm) {
 
     var card = document.createElement('div');
     card.id = 'kss-restore-prompt';
+    // Top-center placement so it reads clearly as an active prompt, not a stray toast.
     card.style.cssText = [
-        'position:fixed', 'z-index:2147483647', 'right:20px', 'bottom:20px',
-        'width:300px', 'padding:16px', 'box-sizing:border-box',
-        'background:#fff', 'color:#333', 'border-radius:10px',
-        'box-shadow:0 6px 24px rgba(0,0,0,0.18)',
+        'position:fixed', 'z-index:2147483647', 'top:20px', 'left:50%',
+        'width:360px', 'max-width:calc(100vw - 32px)', 'padding:16px 18px', 'box-sizing:border-box',
+        // Tinted surface + accent border so it stands out even on pure-white pages.
+        'background:#f2f9f5', 'color:#1f2a26', 'border:1px solid #bfe0cf',
+        'border-left:4px solid #2f7d5b', 'border-radius:12px',
+        'box-shadow:0 12px 32px rgba(31,42,38,0.22)',
         'font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif',
-        'transform:translateY(16px)', 'opacity:0',
+        'transform:translate(-50%,-16px)', 'opacity:0',
         'transition:transform .25s ease,opacity .25s ease'
     ].join(';');
 
     var text = document.createElement('div');
-    text.style.cssText = 'margin-bottom:12px;';
+    text.style.cssText = 'margin-bottom:12px;color:#1f2a26;';
     text.textContent = promptText;
 
     var actions = document.createElement('div');
     actions.style.cssText = 'display:flex;justify-content:flex-end;gap:8px;';
 
-    var btnStyle = 'padding:5px 14px;border-radius:6px;cursor:pointer;font-size:13px;border:none;outline:none;';
+    var btnStyle = 'padding:6px 16px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:500;border:none;outline:none;';
     var ignoreBtn = document.createElement('button');
     ignoreBtn.textContent = chrome.i18n.getMessage('ignore');
-    ignoreBtn.style.cssText = btnStyle + 'background:#f0f0f0;color:#666;';
+    ignoreBtn.style.cssText = btnStyle + 'background:#e0ede6;color:#5a6b62;';
     var jumpBtn = document.createElement('button');
     jumpBtn.textContent = chrome.i18n.getMessage('jump');
-    jumpBtn.style.cssText = btnStyle + 'background:#4a90d9;color:#fff;';
+    jumpBtn.style.cssText = btnStyle + 'background:#2f7d5b;color:#fff;';
 
     actions.appendChild(ignoreBtn);
     actions.appendChild(jumpBtn);
@@ -68,16 +71,16 @@ function showRestorePrompt(historyScrollInfo, onConfirm) {
     card.appendChild(actions);
     document.body.appendChild(card);
 
-    // Trigger the enter animation on the next frame.
+    // Trigger the enter animation on the next frame (slides down from the top).
     requestAnimationFrame(function() {
-        card.style.transform = 'translateY(0)';
+        card.style.transform = 'translate(-50%,0)';
         card.style.opacity = '1';
     });
 
     var dismissTimer;
     function close() {
         clearTimeout(dismissTimer);
-        card.style.transform = 'translateY(16px)';
+        card.style.transform = 'translate(-50%,-16px)';
         card.style.opacity = '0';
         setTimeout(function() { card.remove(); }, 250);
     }

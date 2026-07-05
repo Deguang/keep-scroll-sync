@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <style>
             :root {
-                --accent: #5b6ef5;
-                --accent-hover: #4a5be0;
+                --accent: #2f7d5b;
+                --accent-hover: #266a4d;
+                --accent-soft: #e6f2ec;
                 --bg: #ffffff;
-                --surface: #f6f7fb;
-                --text: #1f2430;
-                --text-dim: #8a90a2;
-                --border: #e8eaf2;
+                --surface: #f2f9f5;
+                --text: #1f2a26;
+                --text-dim: #7c8a83;
+                --border: #dfeae4;
             }
             * { box-sizing: border-box; }
             body {
@@ -61,7 +62,7 @@
                 background: var(--surface);
                 color: var(--text-dim);
             }
-            .del-scroll:hover { background: #edeef5; color: var(--text); }
+            .del-scroll:hover { background: var(--accent-soft); color: var(--text); }
 
             .list-title {
                 font-size: 11px;
@@ -114,7 +115,7 @@
                 font-size: 11px;
                 font-weight: 600;
                 color: var(--accent);
-                background: rgba(91,110,245,.1);
+                background: var(--accent-soft);
                 padding: 2px 7px;
                 border-radius: 999px;
             }
