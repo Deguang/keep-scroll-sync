@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant" class="scroll-smooth">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,46 +30,31 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: { extend: { colors: {
-                brand: { DEFAULT: '#2f7d5b', dark: '#266a4d', soft: '#e6f2ec' },
-                cream: '#f4efe1', gold: '#e0a94a'
-            } } }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .hero-gradient { background: linear-gradient(135deg, #2f7d5b 0%, #1f5a41 100%); }
-        .lang-menu { display: none; }
-        .lang-wrap:hover .lang-menu { display: block; }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-emerald-50/30 text-slate-900">
+<body>
 
     <!-- Nav -->
-    <nav class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
-        <div class="flex items-center gap-2.5">
-            <img src="icon-128.png" alt="" class="w-8 h-8 rounded-lg">
-            <span class="font-bold text-lg">Keep Scroll Sync</span>
+    <nav class="nav">
+        <div class="nav-brand">
+            <img src="icon-128.png" alt="" class="nav-logo">
+            <span class="nav-title">Keep Scroll Sync</span>
         </div>
-        <div class="flex items-center gap-6 text-sm font-medium">
-            <a href="#features" class="text-slate-600 hover:text-brand">功能</a>
-            <a href="privacy.html" class="text-slate-600 hover:text-brand">隱私</a>
-            <a href="https://github.com/Deguang/keep-scroll-sync" class="text-slate-600 hover:text-brand">GitHub</a>
-            <div class="relative lang-wrap">
-                <button class="text-slate-600 hover:text-brand">🌐 繁體中文 ▾</button>
-                <div class="lang-menu absolute right-0 pt-2 z-10">
-                    <div class="bg-white border border-emerald-100 rounded-lg shadow-lg overflow-hidden w-32">
-                        <a href="index.html" class="block px-4 py-2 hover:bg-brand-soft">English</a>
-                        <a href="zh.html" class="block px-4 py-2 hover:bg-brand-soft">简体中文</a>
-                        <a href="zh-TW.html" class="block px-4 py-2 hover:bg-brand-soft">繁體中文</a>
-                        <a href="ja.html" class="block px-4 py-2 hover:bg-brand-soft">日本語</a>
-                        <a href="ko.html" class="block px-4 py-2 hover:bg-brand-soft">한국어</a>
-                        <a href="ru.html" class="block px-4 py-2 hover:bg-brand-soft">Русский</a>
-                        <a href="hi.html" class="block px-4 py-2 hover:bg-brand-soft">हिन्दी</a>
+        <div class="nav-links">
+            <a href="#features" class="nav-link">功能</a>
+            <a href="privacy.html" class="nav-link">隱私</a>
+            <a href="https://github.com/Deguang/keep-scroll-sync" class="nav-link">GitHub</a>
+            <div class="lang-wrap">
+                <button class="lang-btn">🌐 繁體中文 ▾</button>
+                <div class="lang-menu">
+                    <div class="lang-menu-inner">
+                        <a href="index.html">English</a>
+                        <a href="zh.html">简体中文</a>
+                        <a href="zh-TW.html">繁體中文</a>
+                        <a href="ja.html">日本語</a>
+                        <a href="ko.html">한국어</a>
+                        <a href="ru.html">Русский</a>
+                        <a href="hi.html">हिन्दी</a>
                     </div>
                 </div>
             </div>
@@ -77,81 +62,79 @@
     </nav>
 
     <!-- Hero -->
-    <header class="hero-gradient text-white">
-        <div class="max-w-5xl mx-auto px-6 py-24 md:py-32 text-center">
-            <img src="icon.png" alt="Keep Scroll Sync" class="w-24 h-24 rounded-3xl mx-auto mb-8 shadow-lg">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">再也不會<br>讀丟位置。</h1>
-            <p class="text-lg md:text-xl text-emerald-50/90 max-w-2xl mx-auto mb-10">在任意網頁儲存你讀到的位置,下次在任何裝置上都能從那裡繼續 —— 透過你自己的 Chrome 帳戶同步。</p>
-            <a href="https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl"
-               class="inline-block bg-white text-brand-dark font-semibold px-8 py-3.5 rounded-xl shadow hover:bg-emerald-50 transition">
-                免費新增到 Chrome
-            </a>
+    <header class="hero">
+        <div class="hero-inner">
+            <img src="icon.png" alt="Keep Scroll Sync" class="hero-icon">
+            <h1 class="hero-title">再也不會<br>讀丟位置。</h1>
+            <p class="hero-subtitle">在任意網頁儲存你讀到的位置,下次在任何裝置上都能從那裡繼續 —— 透過你自己的 Chrome 帳戶同步。</p>
+            <a href="https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl" class="btn">免費新增到 Chrome</a>
         </div>
     </header>
 
     <!-- Features -->
-    <section id="features" class="max-w-5xl mx-auto px-6 py-20 md:py-24">
-        <h2 class="text-3xl font-bold text-center mb-14">記住閱讀位置所需的一切</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">🔖</div>
-                <h3 class="font-semibold text-lg mb-2">儲存與還原</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">一鍵儲存精確的捲動位置。下次開啟該頁面時,會提示你直接跳回。</p>
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">記住閱讀位置所需的一切</h2>
+            <div class="feature-grid">
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔖</div>
+                    <h3 class="feature-name">儲存與還原</h3>
+                    <p class="feature-desc">一鍵儲存精確的捲動位置。下次開啟該頁面時,會提示你直接跳回。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-name">多裝置同步</h3>
+                    <p class="feature-desc">基於 Chrome 帳戶同步,在筆電上儲存的位置,在桌機上也在等著你。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📑</div>
+                    <h3 class="feature-name">頁面目錄</h3>
+                    <p class="feature-desc">所有已儲存頁面彙整成一個清爽列表,含標題、favicon 和閱讀進度 —— 點擊即可重新開啟。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 class="feature-name">支援多語言</h3>
+                    <p class="feature-desc">支援英語、簡體/繁體中文、日語、韓語、俄語和印地語。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-name">隱私優先</h3>
+                    <p class="feature-desc">沒有伺服器,沒有追蹤。資料只留在你的瀏覽器和 Chrome 帳戶裡 —— 絕不傳給我們。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-name">輕量</h3>
+                    <p class="feature-desc">小巧專注的擴充功能,把一件事做好,絕不打擾你。</p>
+                </div>
+                
             </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">🔄</div>
-                <h3 class="font-semibold text-lg mb-2">多裝置同步</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">基於 Chrome 帳戶同步,在筆電上儲存的位置,在桌機上也在等著你。</p>
-            </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">📑</div>
-                <h3 class="font-semibold text-lg mb-2">頁面目錄</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">所有已儲存頁面彙整成一個清爽列表,含標題、favicon 和閱讀進度 —— 點擊即可重新開啟。</p>
-            </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">🌍</div>
-                <h3 class="font-semibold text-lg mb-2">支援多語言</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">支援英語、簡體/繁體中文、日語、韓語、俄語和印地語。</p>
-            </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">🔒</div>
-                <h3 class="font-semibold text-lg mb-2">隱私優先</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">沒有伺服器,沒有追蹤。資料只留在你的瀏覽器和 Chrome 帳戶裡 —— 絕不傳給我們。</p>
-            </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">⚡</div>
-                <h3 class="font-semibold text-lg mb-2">輕量</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">小巧專注的擴充功能,把一件事做好,絕不打擾你。</p>
-            </div>
-            
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="max-w-5xl mx-auto px-6 pb-24">
-        <div class="hero-gradient text-white rounded-3xl px-8 py-14 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">從上次停下的地方繼續。</h2>
-            <a href="https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl"
-               class="inline-block bg-white text-brand-dark font-semibold px-8 py-3.5 rounded-xl shadow hover:bg-emerald-50 transition mt-2">
-                免費新增到 Chrome
-            </a>
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">從上次停下的地方繼續。</h2>
+                <a href="https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl" class="btn">免費新增到 Chrome</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-emerald-100">
-        <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+    <footer class="footer">
+        <div class="footer-inner">
             <span>© 2026 同步閱讀進度</span>
-            <div class="flex gap-6">
-                <a href="privacy.html" class="hover:text-brand">隱私政策</a>
-                <a href="https://github.com/Deguang/keep-scroll-sync" class="hover:text-brand">GitHub</a>
-                <a href="https://github.com/Deguang/keep-scroll-sync/issues" class="hover:text-brand">意見回饋</a>
+            <div class="footer-links">
+                <a href="privacy.html">隱私政策</a>
+                <a href="https://github.com/Deguang/keep-scroll-sync">GitHub</a>
+                <a href="https://github.com/Deguang/keep-scroll-sync/issues">意見回饋</a>
             </div>
         </div>
     </footer>

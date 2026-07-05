@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi" class="scroll-smooth">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,46 +30,31 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: { extend: { colors: {
-                brand: { DEFAULT: '#2f7d5b', dark: '#266a4d', soft: '#e6f2ec' },
-                cream: '#f4efe1', gold: '#e0a94a'
-            } } }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .hero-gradient { background: linear-gradient(135deg, #2f7d5b 0%, #1f5a41 100%); }
-        .lang-menu { display: none; }
-        .lang-wrap:hover .lang-menu { display: block; }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-emerald-50/30 text-slate-900">
+<body>
 
     <!-- Nav -->
-    <nav class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
-        <div class="flex items-center gap-2.5">
-            <img src="icon-128.png" alt="" class="w-8 h-8 rounded-lg">
-            <span class="font-bold text-lg">Keep Scroll Sync</span>
+    <nav class="nav">
+        <div class="nav-brand">
+            <img src="icon-128.png" alt="" class="nav-logo">
+            <span class="nav-title">Keep Scroll Sync</span>
         </div>
-        <div class="flex items-center gap-6 text-sm font-medium">
-            <a href="#features" class="text-slate-600 hover:text-brand">विशेषताएं</a>
-            <a href="privacy.html" class="text-slate-600 hover:text-brand">गोपनीयता</a>
-            <a href="https://github.com/Deguang/keep-scroll-sync" class="text-slate-600 hover:text-brand">GitHub</a>
-            <div class="relative lang-wrap">
-                <button class="text-slate-600 hover:text-brand">🌐 हिन्दी ▾</button>
-                <div class="lang-menu absolute right-0 pt-2 z-10">
-                    <div class="bg-white border border-emerald-100 rounded-lg shadow-lg overflow-hidden w-32">
-                        <a href="index.html" class="block px-4 py-2 hover:bg-brand-soft">English</a>
-                        <a href="zh.html" class="block px-4 py-2 hover:bg-brand-soft">简体中文</a>
-                        <a href="zh-TW.html" class="block px-4 py-2 hover:bg-brand-soft">繁體中文</a>
-                        <a href="ja.html" class="block px-4 py-2 hover:bg-brand-soft">日本語</a>
-                        <a href="ko.html" class="block px-4 py-2 hover:bg-brand-soft">한국어</a>
-                        <a href="ru.html" class="block px-4 py-2 hover:bg-brand-soft">Русский</a>
-                        <a href="hi.html" class="block px-4 py-2 hover:bg-brand-soft">हिन्दी</a>
+        <div class="nav-links">
+            <a href="#features" class="nav-link">विशेषताएं</a>
+            <a href="privacy.html" class="nav-link">गोपनीयता</a>
+            <a href="https://github.com/Deguang/keep-scroll-sync" class="nav-link">GitHub</a>
+            <div class="lang-wrap">
+                <button class="lang-btn">🌐 हिन्दी ▾</button>
+                <div class="lang-menu">
+                    <div class="lang-menu-inner">
+                        <a href="index.html">English</a>
+                        <a href="zh.html">简体中文</a>
+                        <a href="zh-TW.html">繁體中文</a>
+                        <a href="ja.html">日本語</a>
+                        <a href="ko.html">한국어</a>
+                        <a href="ru.html">Русский</a>
+                        <a href="hi.html">हिन्दी</a>
                     </div>
                 </div>
             </div>
@@ -77,81 +62,79 @@
     </nav>
 
     <!-- Hero -->
-    <header class="hero-gradient text-white">
-        <div class="max-w-5xl mx-auto px-6 py-24 md:py-32 text-center">
-            <img src="icon.png" alt="Keep Scroll Sync" class="w-24 h-24 rounded-3xl mx-auto mb-8 shadow-lg">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">पढ़ने की जगह<br>अब कभी न खोएं।</h1>
-            <p class="text-lg md:text-xl text-emerald-50/90 max-w-2xl mx-auto mb-10">किसी भी पेज पर जहाँ आपने पढ़ना छोड़ा था उसे सहेजें और वहीं से जारी रखें — किसी भी उपकरण पर, आपके अपने Chrome खाते के ज़रिए सिंक।</p>
-            <a href="https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl"
-               class="inline-block bg-white text-brand-dark font-semibold px-8 py-3.5 rounded-xl shadow hover:bg-emerald-50 transition">
-                Chrome में जोड़ें — मुफ़्त
-            </a>
+    <header class="hero">
+        <div class="hero-inner">
+            <img src="icon.png" alt="Keep Scroll Sync" class="hero-icon">
+            <h1 class="hero-title">पढ़ने की जगह<br>अब कभी न खोएं।</h1>
+            <p class="hero-subtitle">किसी भी पेज पर जहाँ आपने पढ़ना छोड़ा था उसे सहेजें और वहीं से जारी रखें — किसी भी उपकरण पर, आपके अपने Chrome खाते के ज़रिए सिंक।</p>
+            <a href="https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl" class="btn">Chrome में जोड़ें — मुफ़्त</a>
         </div>
     </header>
 
     <!-- Features -->
-    <section id="features" class="max-w-5xl mx-auto px-6 py-20 md:py-24">
-        <h2 class="text-3xl font-bold text-center mb-14">पढ़ने की जगह बनाए रखने के लिए सब कुछ</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">🔖</div>
-                <h3 class="font-semibold text-lg mb-2">सहेजें और पुनर्स्थापित करें</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">एक क्लिक में आपकी सटीक स्क्रॉल स्थिति सहेजी जाती है। अगली बार पेज खोलने पर यह वहीं जाने का सुझाव देता है।</p>
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">पढ़ने की जगह बनाए रखने के लिए सब कुछ</h2>
+            <div class="feature-grid">
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔖</div>
+                    <h3 class="feature-name">सहेजें और पुनर्स्थापित करें</h3>
+                    <p class="feature-desc">एक क्लिक में आपकी सटीक स्क्रॉल स्थिति सहेजी जाती है। अगली बार पेज खोलने पर यह वहीं जाने का सुझाव देता है।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-name">उपकरणों के बीच सिंक</h3>
+                    <p class="feature-desc">आपके Chrome खाते के सिंक का उपयोग करता है, ताकि लैपटॉप पर सहेजी स्थिति डेस्कटॉप पर भी मिले।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📑</div>
+                    <h3 class="feature-name">पेजों की सूची</h3>
+                    <p class="feature-desc">सभी सहेजे गए पेज एक साफ़ सूची में — शीर्षक, favicon और पढ़ने की प्रगति के साथ, खोलने के लिए क्लिक करें।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 class="feature-name">आपकी भाषा में</h3>
+                    <p class="feature-desc">अंग्रेज़ी, सरलीकृत/पारंपरिक चीनी, जापानी, कोरियाई, रूसी और हिन्दी में उपलब्ध।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-name">गोपनीयता प्राथमिकता</h3>
+                    <p class="feature-desc">कोई सर्वर नहीं, कोई ट्रैकिंग नहीं। आपका डेटा आपके ब्राउज़र और Chrome खाते में ही रहता है — हमें कभी नहीं भेजा जाता।</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-name">हल्का</h3>
+                    <p class="feature-desc">एक छोटा, केंद्रित एक्सटेंशन जो एक काम अच्छे से करता है और आपके रास्ते में नहीं आता।</p>
+                </div>
+                
             </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">🔄</div>
-                <h3 class="font-semibold text-lg mb-2">उपकरणों के बीच सिंक</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">आपके Chrome खाते के सिंक का उपयोग करता है, ताकि लैपटॉप पर सहेजी स्थिति डेस्कटॉप पर भी मिले।</p>
-            </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">📑</div>
-                <h3 class="font-semibold text-lg mb-2">पेजों की सूची</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">सभी सहेजे गए पेज एक साफ़ सूची में — शीर्षक, favicon और पढ़ने की प्रगति के साथ, खोलने के लिए क्लिक करें।</p>
-            </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">🌍</div>
-                <h3 class="font-semibold text-lg mb-2">आपकी भाषा में</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">अंग्रेज़ी, सरलीकृत/पारंपरिक चीनी, जापानी, कोरियाई, रूसी और हिन्दी में उपलब्ध।</p>
-            </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">🔒</div>
-                <h3 class="font-semibold text-lg mb-2">गोपनीयता प्राथमिकता</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">कोई सर्वर नहीं, कोई ट्रैकिंग नहीं। आपका डेटा आपके ब्राउज़र और Chrome खाते में ही रहता है — हमें कभी नहीं भेजा जाता।</p>
-            </div>
-            
-            <div class="bg-white p-7 rounded-2xl border border-emerald-100 shadow-sm">
-                <div class="w-11 h-11 rounded-xl bg-brand-soft text-brand flex items-center justify-center text-xl mb-4">⚡</div>
-                <h3 class="font-semibold text-lg mb-2">हल्का</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">एक छोटा, केंद्रित एक्सटेंशन जो एक काम अच्छे से करता है और आपके रास्ते में नहीं आता।</p>
-            </div>
-            
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="max-w-5xl mx-auto px-6 pb-24">
-        <div class="hero-gradient text-white rounded-3xl px-8 py-14 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">जहाँ छोड़ा था वहीं से जारी रखें।</h2>
-            <a href="https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl"
-               class="inline-block bg-white text-brand-dark font-semibold px-8 py-3.5 rounded-xl shadow hover:bg-emerald-50 transition mt-2">
-                Chrome में जोड़ें — मुफ़्त
-            </a>
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">जहाँ छोड़ा था वहीं से जारी रखें।</h2>
+                <a href="https://chrome.google.com/webstore/detail/keep-scroll-sync/lblfgppmhibloglgndekfdhmbfbdlndl" class="btn">Chrome में जोड़ें — मुफ़्त</a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-emerald-100">
-        <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+    <footer class="footer">
+        <div class="footer-inner">
             <span>© 2026 स्क्रॉल स्थिति सिंक</span>
-            <div class="flex gap-6">
-                <a href="privacy.html" class="hover:text-brand">गोपनीयता नीति</a>
-                <a href="https://github.com/Deguang/keep-scroll-sync" class="hover:text-brand">GitHub</a>
-                <a href="https://github.com/Deguang/keep-scroll-sync/issues" class="hover:text-brand">प्रतिक्रिया</a>
+            <div class="footer-links">
+                <a href="privacy.html">गोपनीयता नीति</a>
+                <a href="https://github.com/Deguang/keep-scroll-sync">GitHub</a>
+                <a href="https://github.com/Deguang/keep-scroll-sync/issues">प्रतिक्रिया</a>
             </div>
         </div>
     </footer>
