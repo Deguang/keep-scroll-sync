@@ -1,0 +1,26 @@
+{
+  "htmlLang": "en",
+  "langLabel": "English",
+  "canonical": "https://deguang.github.io/keep-scroll-sync/index.html",
+  "title": "Keep Scroll Sync — Never lose your reading position",
+  "description": "Save your scroll position on any page and sync it across your devices through your Chrome account. Private by design.",
+  "ogTitle": "Keep Scroll Sync",
+  "ogDescription": "Never lose your reading position — synced across your devices.",
+  "nav": { "features": "Features", "privacy": "Privacy", "github": "GitHub" },
+  "hero": {
+    "title": "Never lose your<br>reading position.",
+    "subtitle": "Save where you stopped reading on any page and pick up right there — on any device, synced through your own Chrome account.",
+    "cta": "Add to Chrome — it's free"
+  },
+  "featuresTitle": "Everything you need to keep your place",
+  "features": [
+    { "icon": "🔖", "title": "Save &amp; restore", "desc": "One click saves your exact scroll position. Next time you open the page, it offers to jump you right back." },
+    { "icon": "🔄", "title": "Synced across devices", "desc": "Uses your Chrome account sync, so the position you saved on your laptop is waiting on your desktop." },
+    { "icon": "📑", "title": "A directory of pages", "desc": "Every saved page in one tidy list with its title, favicon, and reading progress — click to reopen." },
+    { "icon": "🌍", "title": "Speaks your language", "desc": "Available in English, Simplified &amp; Traditional Chinese, Japanese, Korean, Russian, and Hindi." },
+    { "icon": "🔒", "title": "Private by design", "desc": "No servers, no tracking. Your data stays in your own browser and Chrome account — never sent to us." },
+    { "icon": "⚡", "title": "Lightweight", "desc": "A tiny, focused extension that does one thing well and stays out of your way." }
+  ],
+  "ctaTitle": "Pick up where you left off.",
+  "footer": { "copyright": "© 2026 Keep Scroll Sync", "privacy": "Privacy Policy", "github": "GitHub", "feedback": "Feedback" }
+}

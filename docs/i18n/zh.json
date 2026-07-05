@@ -1,0 +1,26 @@
+{
+  "htmlLang": "zh-CN",
+  "langLabel": "简体中文",
+  "canonical": "https://deguang.github.io/keep-scroll-sync/zh.html",
+  "title": "同步阅读进度 — 再也不会读丢位置",
+  "description": "在任意网页保存你的滚动位置,并通过 Chrome 账户在多设备间同步。隐私优先,数据不外传。",
+  "ogTitle": "同步阅读进度",
+  "ogDescription": "跨设备同步,再也不会读丢位置。",
+  "nav": { "features": "功能", "privacy": "隐私", "github": "GitHub" },
+  "hero": {
+    "title": "再也不会<br>读丢位置。",
+    "subtitle": "在任意网页保存你读到的位置,下次在任何设备上都能从那里继续 —— 通过你自己的 Chrome 账户同步。",
+    "cta": "免费添加到 Chrome"
+  },
+  "featuresTitle": "记住阅读位置所需的一切",
+  "features": [
+    { "icon": "🔖", "title": "保存与恢复", "desc": "一键保存精确的滚动位置。下次打开该页面时,会提示你直接跳回。" },
+    { "icon": "🔄", "title": "多设备同步", "desc": "基于 Chrome 账户同步,在笔记本上保存的位置,在台式机上也在等着你。" },
+    { "icon": "📑", "title": "页面目录", "desc": "所有已保存页面汇成一个清爽列表,含标题、favicon 和阅读进度 —— 点击即可重新打开。" },
+    { "icon": "🌍", "title": "支持多语言", "desc": "支持英语、简体/繁体中文、日语、韩语、俄语和印地语。" },
+    { "icon": "🔒", "title": "隐私优先", "desc": "没有服务器,没有追踪。数据只留在你的浏览器和 Chrome 账户里 —— 绝不发给我们。" },
+    { "icon": "⚡", "title": "轻量", "desc": "小巧专注的扩展,把一件事做好,绝不打扰你。" }
+  ],
+  "ctaTitle": "从上次停下的地方继续。",
+  "footer": { "copyright": "© 2026 同步阅读进度", "privacy": "隐私政策", "github": "GitHub", "feedback": "反馈" }
+}

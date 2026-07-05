@@ -1,0 +1,26 @@
+{
+  "htmlLang": "ko",
+  "langLabel": "한국어",
+  "canonical": "https://deguang.github.io/keep-scroll-sync/ko.html",
+  "title": "스크롤 위치 동기화 — 읽던 위치를 잃지 마세요",
+  "description": "어떤 페이지에서든 스크롤 위치를 저장하고 Chrome 계정을 통해 여러 기기에서 동기화하세요. 프라이버시 우선.",
+  "ogTitle": "스크롤 위치 동기화",
+  "ogDescription": "기기 간 동기화로 읽던 위치를 잃지 않습니다.",
+  "nav": { "features": "기능", "privacy": "개인정보", "github": "GitHub" },
+  "hero": {
+    "title": "읽던 위치를<br>다시는 잃지 마세요.",
+    "subtitle": "어떤 페이지에서든 읽던 위치를 저장하고, 다음에 어느 기기에서든 그 자리에서 이어 보세요 —— 나만의 Chrome 계정으로 동기화됩니다.",
+    "cta": "Chrome에 추가 — 무료"
+  },
+  "featuresTitle": "읽던 위치를 지키는 데 필요한 모든 것",
+  "features": [
+    { "icon": "🔖", "title": "저장 및 복원", "desc": "클릭 한 번으로 정확한 스크롤 위치를 저장합니다. 다음에 페이지를 열면 그 위치로 이동할지 물어봅니다." },
+    { "icon": "🔄", "title": "기기 간 동기화", "desc": "Chrome 계정 동기화를 사용하므로, 노트북에서 저장한 위치가 데스크톱에서도 기다립니다." },
+    { "icon": "📑", "title": "페이지 목록", "desc": "저장한 모든 페이지를 제목, favicon, 읽기 진행률과 함께 깔끔한 목록으로 —— 클릭하면 다시 열립니다." },
+    { "icon": "🌍", "title": "다국어 지원", "desc": "영어, 중국어 간체/번체, 일본어, 한국어, 러시아어, 힌디어를 지원합니다." },
+    { "icon": "🔒", "title": "프라이버시 우선", "desc": "서버 없음, 추적 없음. 데이터는 내 브라우저와 Chrome 계정에만 머물며 우리에게 전송되지 않습니다." },
+    { "icon": "⚡", "title": "가벼움", "desc": "한 가지를 잘 해내는 작고 집중된 확장 프로그램. 방해하지 않습니다." }
+  ],
+  "ctaTitle": "멈춘 곳에서 이어서 보세요.",
+  "footer": { "copyright": "© 2026 스크롤 위치 동기화", "privacy": "개인정보 처리방침", "github": "GitHub", "feedback": "피드백" }
+}
