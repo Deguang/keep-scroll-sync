@@ -2,5 +2,65 @@
     "extName": {
         "message": "同步阅读进度",
         "description": "Extension name."
+    },
+    "extDescription": {
+        "message": "一个跨设备同步页面滚动进度的插件。",
+        "description": "Extension description."
+    },
+    "appTitle": {
+        "message": "同步阅读进度",
+        "description": "Popup title."
+    },
+    "saveBtn": {
+        "message": "保存滚动位置",
+        "description": "Save button default label."
+    },
+    "saveBtnSaved": {
+        "message": "已保存滚动位置",
+        "description": "Save button label after saving."
+    },
+    "saveBtnError": {
+        "message": "无法在此页面保存",
+        "description": "Save button label when the page has no content script."
+    },
+    "delBtn": {
+        "message": "删除滚动记录",
+        "description": "Delete button default label."
+    },
+    "delBtnDone": {
+        "message": "记录已删除",
+        "description": "Delete button label after deleting."
+    },
+    "feedback": {
+        "message": "有建议或反馈？",
+        "description": "Feedback link text."
+    },
+    "listTitle": {
+        "message": "已保存页面",
+        "description": "Saved-pages list title."
+    },
+    "listEmpty": {
+        "message": "还没有保存的页面",
+        "description": "Empty list placeholder."
+    },
+    "removeTitle": {
+        "message": "删除",
+        "description": "Tooltip for removing a saved page."
+    },
+    "restorePrompt": {
+        "message": "最远阅读进度为 $PERCENT$%（$TIME$）。跳转到该位置？",
+        "description": "In-page restore prompt.",
+        "placeholders": {
+            "percent": { "content": "$1", "example": "42.50" },
+            "time": { "content": "$2", "example": "2026/1/2 15:04:05" }
+        }
+    },
+    "jump": {
+        "message": "跳转",
+        "description": "Restore prompt confirm button."
+    },
+    "ignore": {
+        "message": "忽略",
+        "description": "Restore prompt dismiss button."
     }
 }

@@ -1,0 +1,66 @@
+{
+    "extName": {
+        "message": "स्क्रॉल स्थिति सिंक करें",
+        "description": "Extension name."
+    },
+    "extDescription": {
+        "message": "उपकरणों के बीच पेज की स्क्रॉल स्थिति को सिंक रखने वाला एक्सटेंशन।",
+        "description": "Extension description."
+    },
+    "appTitle": {
+        "message": "स्क्रॉल स्थिति सिंक",
+        "description": "Popup title."
+    },
+    "saveBtn": {
+        "message": "स्क्रॉल स्थिति सहेजें",
+        "description": "Save button default label."
+    },
+    "saveBtnSaved": {
+        "message": "स्क्रॉल स्थिति सहेजी गई",
+        "description": "Save button label after saving."
+    },
+    "saveBtnError": {
+        "message": "इस पेज पर सहेजा नहीं जा सकता",
+        "description": "Save button label when the page has no content script."
+    },
+    "delBtn": {
+        "message": "स्क्रॉल इतिहास हटाएं",
+        "description": "Delete button default label."
+    },
+    "delBtnDone": {
+        "message": "इतिहास हटा दिया गया",
+        "description": "Delete button label after deleting."
+    },
+    "feedback": {
+        "message": "कोई सुझाव या प्रतिक्रिया?",
+        "description": "Feedback link text."
+    },
+    "listTitle": {
+        "message": "सहेजे गए पेज",
+        "description": "Saved-pages list title."
+    },
+    "listEmpty": {
+        "message": "अभी तक कोई सहेजा गया पेज नहीं",
+        "description": "Empty list placeholder."
+    },
+    "removeTitle": {
+        "message": "हटाएं",
+        "description": "Tooltip for removing a saved page."
+    },
+    "restorePrompt": {
+        "message": "सबसे दूर पढ़ी गई स्थिति $PERCENT$% ($TIME$) है। उस स्थिति पर जाएं?",
+        "description": "In-page restore prompt.",
+        "placeholders": {
+            "percent": { "content": "$1", "example": "42.50" },
+            "time": { "content": "$2", "example": "2/1/2026, 3:04:05 pm" }
+        }
+    },
+    "jump": {
+        "message": "जाएं",
+        "description": "Restore prompt confirm button."
+    },
+    "ignore": {
+        "message": "अनदेखा करें",
+        "description": "Restore prompt dismiss button."
+    }
+}

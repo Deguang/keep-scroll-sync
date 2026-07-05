@@ -1,66 +1,66 @@
 {
     "extName": {
-        "message": "Keep scroll sync",
+        "message": "スクロール位置を同期",
         "description": "Extension name."
     },
     "extDescription": {
-        "message": "An extension to keep scroll position in sync across devices.",
+        "message": "デバイス間でページのスクロール位置を同期する拡張機能です。",
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "Keep Scroll Sync",
+        "message": "スクロール位置を同期",
         "description": "Popup title."
     },
     "saveBtn": {
-        "message": "Save scroll position",
+        "message": "スクロール位置を保存",
         "description": "Save button default label."
     },
     "saveBtnSaved": {
-        "message": "Scroll position saved",
+        "message": "スクロール位置を保存しました",
         "description": "Save button label after saving."
     },
     "saveBtnError": {
-        "message": "Cannot save on this page",
+        "message": "このページでは保存できません",
         "description": "Save button label when the page has no content script."
     },
     "delBtn": {
-        "message": "Del scroll history",
+        "message": "履歴を削除",
         "description": "Delete button default label."
     },
     "delBtnDone": {
-        "message": "History deleted",
+        "message": "履歴を削除しました",
         "description": "Delete button label after deleting."
     },
     "feedback": {
-        "message": "Some advice or feedback?",
+        "message": "ご意見・ご感想はこちら",
         "description": "Feedback link text."
     },
     "listTitle": {
-        "message": "Saved pages",
+        "message": "保存したページ",
         "description": "Saved-pages list title."
     },
     "listEmpty": {
-        "message": "No saved pages yet",
+        "message": "保存したページはまだありません",
         "description": "Empty list placeholder."
     },
     "removeTitle": {
-        "message": "Remove",
+        "message": "削除",
         "description": "Tooltip for removing a saved page."
     },
     "restorePrompt": {
-        "message": "The furthest read position is $PERCENT$% at $TIME$. Go to that position?",
+        "message": "最も読み進めた位置は $PERCENT$%（$TIME$）です。その位置に移動しますか？",
         "description": "In-page restore prompt.",
         "placeholders": {
             "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "1/2/2026, 3:04:05 PM" }
+            "time": { "content": "$2", "example": "2026/1/2 15:04:05" }
         }
     },
     "jump": {
-        "message": "Jump",
+        "message": "移動",
         "description": "Restore prompt confirm button."
     },
     "ignore": {
-        "message": "Ignore",
+        "message": "無視",
         "description": "Restore prompt dismiss button."
     }
 }

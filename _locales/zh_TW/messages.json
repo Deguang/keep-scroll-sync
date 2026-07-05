@@ -1,66 +1,66 @@
 {
     "extName": {
-        "message": "Keep scroll sync",
+        "message": "同步閱讀進度",
         "description": "Extension name."
     },
     "extDescription": {
-        "message": "An extension to keep scroll position in sync across devices.",
+        "message": "一個跨裝置同步頁面捲動進度的擴充功能。",
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "Keep Scroll Sync",
+        "message": "同步閱讀進度",
         "description": "Popup title."
     },
     "saveBtn": {
-        "message": "Save scroll position",
+        "message": "儲存捲動位置",
         "description": "Save button default label."
     },
     "saveBtnSaved": {
-        "message": "Scroll position saved",
+        "message": "已儲存捲動位置",
         "description": "Save button label after saving."
     },
     "saveBtnError": {
-        "message": "Cannot save on this page",
+        "message": "無法在此頁面儲存",
         "description": "Save button label when the page has no content script."
     },
     "delBtn": {
-        "message": "Del scroll history",
+        "message": "刪除捲動記錄",
         "description": "Delete button default label."
     },
     "delBtnDone": {
-        "message": "History deleted",
+        "message": "記錄已刪除",
         "description": "Delete button label after deleting."
     },
     "feedback": {
-        "message": "Some advice or feedback?",
+        "message": "有建議或回饋？",
         "description": "Feedback link text."
     },
     "listTitle": {
-        "message": "Saved pages",
+        "message": "已儲存頁面",
         "description": "Saved-pages list title."
     },
     "listEmpty": {
-        "message": "No saved pages yet",
+        "message": "尚未儲存任何頁面",
         "description": "Empty list placeholder."
     },
     "removeTitle": {
-        "message": "Remove",
+        "message": "刪除",
         "description": "Tooltip for removing a saved page."
     },
     "restorePrompt": {
-        "message": "The furthest read position is $PERCENT$% at $TIME$. Go to that position?",
+        "message": "最遠閱讀進度為 $PERCENT$%（$TIME$）。跳轉到該位置？",
         "description": "In-page restore prompt.",
         "placeholders": {
             "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "1/2/2026, 3:04:05 PM" }
+            "time": { "content": "$2", "example": "2026/1/2 15:04:05" }
         }
     },
     "jump": {
-        "message": "Jump",
+        "message": "跳轉",
         "description": "Restore prompt confirm button."
     },
     "ignore": {
-        "message": "Ignore",
+        "message": "忽略",
         "description": "Restore prompt dismiss button."
     }
 }

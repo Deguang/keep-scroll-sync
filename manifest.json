@@ -1,6 +1,6 @@
 {
-    "name": "Keep scroll sync",
-    "description": "It's an extension for keep scroll position cross platform.",
+    "name": "__MSG_extName__",
+    "description": "__MSG_extDescription__",
     "version": "0.1.0.0",
     "manifest_version": 3,
     "action":{
@@ -30,8 +30,7 @@
     "permissions": [
         "tabs",
         "activeTab",
-        "storage",
-        "contentSettings"
+        "storage"
     ],
     "content_scripts": [
         {
@@ -40,6 +39,5 @@
             "run_at": "document_end"
         }
     ],
-    "default_locale": "en",
-    "update_url": "http://clients2.google.com/service/update2/crx?response=updatecheck&id%3Dfpbpmnlgndlolnnbboiongdjanhdbaic%26uc"
+    "default_locale": "en"
 }

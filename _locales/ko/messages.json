@@ -1,66 +1,66 @@
 {
     "extName": {
-        "message": "Keep scroll sync",
+        "message": "스크롤 위치 동기화",
         "description": "Extension name."
     },
     "extDescription": {
-        "message": "An extension to keep scroll position in sync across devices.",
+        "message": "여러 기기에서 페이지 스크롤 위치를 동기화하는 확장 프로그램입니다.",
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "Keep Scroll Sync",
+        "message": "스크롤 위치 동기화",
         "description": "Popup title."
     },
     "saveBtn": {
-        "message": "Save scroll position",
+        "message": "스크롤 위치 저장",
         "description": "Save button default label."
     },
     "saveBtnSaved": {
-        "message": "Scroll position saved",
+        "message": "스크롤 위치 저장됨",
         "description": "Save button label after saving."
     },
     "saveBtnError": {
-        "message": "Cannot save on this page",
+        "message": "이 페이지에서는 저장할 수 없습니다",
         "description": "Save button label when the page has no content script."
     },
     "delBtn": {
-        "message": "Del scroll history",
+        "message": "스크롤 기록 삭제",
         "description": "Delete button default label."
     },
     "delBtnDone": {
-        "message": "History deleted",
+        "message": "기록이 삭제됨",
         "description": "Delete button label after deleting."
     },
     "feedback": {
-        "message": "Some advice or feedback?",
+        "message": "의견이나 피드백이 있으신가요?",
         "description": "Feedback link text."
     },
     "listTitle": {
-        "message": "Saved pages",
+        "message": "저장된 페이지",
         "description": "Saved-pages list title."
     },
     "listEmpty": {
-        "message": "No saved pages yet",
+        "message": "저장된 페이지가 없습니다",
         "description": "Empty list placeholder."
     },
     "removeTitle": {
-        "message": "Remove",
+        "message": "삭제",
         "description": "Tooltip for removing a saved page."
     },
     "restorePrompt": {
-        "message": "The furthest read position is $PERCENT$% at $TIME$. Go to that position?",
+        "message": "가장 멀리 읽은 위치는 $PERCENT$%($TIME$)입니다. 해당 위치로 이동할까요?",
         "description": "In-page restore prompt.",
         "placeholders": {
             "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "1/2/2026, 3:04:05 PM" }
+            "time": { "content": "$2", "example": "2026. 1. 2. 오후 3:04:05" }
         }
     },
     "jump": {
-        "message": "Jump",
+        "message": "이동",
         "description": "Restore prompt confirm button."
     },
     "ignore": {
-        "message": "Ignore",
+        "message": "무시",
         "description": "Restore prompt dismiss button."
     }
 }
