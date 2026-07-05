@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Keep Scroll Sync</title>
+    <link rel="icon" type="image/png" href="icon-128.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Inter', sans-serif; } </style>
+</head>
+<body class="bg-emerald-50/40 text-slate-900">
+
+    <div class="max-w-3xl mx-auto px-6 py-16 md:py-20">
+        <a href="index.html" class="text-emerald-700 hover:text-emerald-900 mb-8 inline-block font-medium">← Back to Home</a>
+
+        <h1 class="text-4xl font-bold mb-8">Privacy Policy</h1>
+
+        <div class="prose prose-slate lg:prose-lg bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-emerald-100">
+            <p><strong>Last Updated:</strong> July 5, 2026</p>
+
+            <h3>1. Introduction</h3>
+            <p>Keep Scroll Sync ("we", "our", or "us") respects your privacy. This Privacy Policy explains what data the browser extension handles and how.</p>
+
+            <h3>2. Data We Handle</h3>
+            <p><strong>We do NOT collect, sell, or transmit any of your data to our servers or any third party.</strong> We operate no servers and have no analytics.</p>
+            <p>To remember your reading position, the extension stores the following for pages you explicitly save:</p>
+            <ul>
+                <li>The page URL, title, and favicon URL</li>
+                <li>Your scroll position and progress percentage</li>
+                <li>The timestamp of when it was saved</li>
+            </ul>
+            <p>This information is written to <code>chrome.storage.sync</code>, which keeps it inside <strong>your own browser and your own Google/Chrome account</strong>. If you are signed into Chrome, Google syncs it across your devices for you. It is never sent to the developer.</p>
+
+            <h3>3. Permissions</h3>
+            <p>The extension requests the minimum permissions needed to work:</p>
+            <ul>
+                <li><code>activeTab</code> / <code>tabs</code>: to read the URL, title, and scroll position of the tab you choose to save, and to reopen a saved page.</li>
+                <li><code>storage</code>: to save your reading positions in your own Chrome sync storage.</li>
+                <li>Host access (<code>&lt;all_urls&gt;</code>): so the content script can measure and restore the scroll position on any page you save.</li>
+            </ul>
+
+            <h3>4. Third-Party Services</h3>
+            <p>This extension uses no third-party analytics, advertising, or tracking services.</p>
+
+            <h3>5. Data Deletion</h3>
+            <p>You can remove any saved page from the extension popup, or clear all extension data by removing the extension. Because data lives in your own Chrome sync storage, you remain in full control of it.</p>
+
+            <h3>6. Changes to This Policy</h3>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date.</p>
+
+            <h3>7. Contact</h3>
+            <p>Questions? Reach us via the <a href="https://github.com/Deguang/keep-scroll-sync/issues">GitHub repository</a>.</p>
+        </div>
+    </div>
+
+</body>
+</html>
