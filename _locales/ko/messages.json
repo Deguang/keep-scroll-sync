@@ -1,6 +1,6 @@
 {
     "extName": {
-        "message": "스크롤 위치 동기화",
+        "message": "스크롤 동기화: 기기 간 위치 유지",
         "description": "Extension name."
     },
     "extDescription": {
@@ -8,7 +8,7 @@
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "스크롤 위치 동기화",
+        "message": "Scroll Sync",
         "description": "Popup title."
     },
     "saveBtn": {
@@ -51,8 +51,14 @@
         "message": "가장 멀리 읽은 위치는 $PERCENT$%($TIME$)입니다. 해당 위치로 이동할까요?",
         "description": "In-page restore prompt.",
         "placeholders": {
-            "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "2026. 1. 2. 오후 3:04:05" }
+            "percent": {
+                "content": "$1",
+                "example": "42.50"
+            },
+            "time": {
+                "content": "$2",
+                "example": "2026. 1. 2. 오후 3:04:05"
+            }
         }
     },
     "jump": {

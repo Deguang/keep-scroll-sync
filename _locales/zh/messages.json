@@ -1,6 +1,6 @@
 {
     "extName": {
-        "message": "同步阅读进度",
+        "message": "滚动同步：跨设备保持阅读位置",
         "description": "Extension name."
     },
     "extDescription": {
@@ -8,7 +8,7 @@
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "同步阅读进度",
+        "message": "Scroll Sync",
         "description": "Popup title."
     },
     "saveBtn": {
@@ -51,8 +51,14 @@
         "message": "最远阅读进度为 $PERCENT$%（$TIME$）。跳转到该位置？",
         "description": "In-page restore prompt.",
         "placeholders": {
-            "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "2026/1/2 15:04:05" }
+            "percent": {
+                "content": "$1",
+                "example": "42.50"
+            },
+            "time": {
+                "content": "$2",
+                "example": "2026/1/2 15:04:05"
+            }
         }
     },
     "jump": {

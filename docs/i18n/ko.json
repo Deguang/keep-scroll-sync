@@ -2,9 +2,9 @@
   "htmlLang": "ko",
   "langLabel": "한국어",
   "canonical": "https://deguang.github.io/keep-scroll-sync/ko.html",
-  "title": "스크롤 위치 동기화 — 읽던 위치를 잃지 마세요",
+  "title": "Scroll Sync — 읽던 위치를 잃지 마세요",
   "description": "어떤 페이지에서든 스크롤 위치를 저장하고 Chrome 계정을 통해 여러 기기에서 동기화하세요. 프라이버시 우선.",
-  "ogTitle": "스크롤 위치 동기화",
+  "ogTitle": "Scroll Sync",
   "ogDescription": "기기 간 동기화로 읽던 위치를 잃지 않습니다.",
   "nav": { "features": "기능", "privacy": "개인정보", "github": "GitHub" },
   "hero": {
@@ -22,5 +22,5 @@
     { "icon": "⚡", "title": "가벼움", "desc": "한 가지를 잘 해내는 작고 집중된 확장 프로그램. 방해하지 않습니다." }
   ],
   "ctaTitle": "멈춘 곳에서 이어서 보세요.",
-  "footer": { "copyright": "© 2026 스크롤 위치 동기화", "privacy": "개인정보 처리방침", "github": "GitHub", "feedback": "피드백" }
+  "footer": { "copyright": "© 2026 Scroll Sync", "privacy": "개인정보 처리방침", "github": "GitHub", "feedback": "피드백" }
 }

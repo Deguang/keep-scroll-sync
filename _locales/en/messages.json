@@ -1,6 +1,6 @@
 {
     "extName": {
-        "message": "Keep scroll sync",
+        "message": "Scroll Sync: Keep position across devices",
         "description": "Extension name."
     },
     "extDescription": {
@@ -8,7 +8,7 @@
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "Keep Scroll Sync",
+        "message": "Scroll Sync",
         "description": "Popup title."
     },
     "saveBtn": {
@@ -51,8 +51,14 @@
         "message": "The furthest read position is $PERCENT$% at $TIME$. Go to that position?",
         "description": "In-page restore prompt.",
         "placeholders": {
-            "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "1/2/2026, 3:04:05 PM" }
+            "percent": {
+                "content": "$1",
+                "example": "42.50"
+            },
+            "time": {
+                "content": "$2",
+                "example": "1/2/2026, 3:04:05 PM"
+            }
         }
     },
     "jump": {

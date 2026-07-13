@@ -1,6 +1,6 @@
 {
     "extName": {
-        "message": "Синхронизация прокрутки",
+        "message": "Синхронизация прокрутки между устройствами",
         "description": "Extension name."
     },
     "extDescription": {
@@ -8,7 +8,7 @@
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "Синхронизация прокрутки",
+        "message": "Scroll Sync",
         "description": "Popup title."
     },
     "saveBtn": {
@@ -51,8 +51,14 @@
         "message": "Самая дальняя прочитанная позиция — $PERCENT$% ($TIME$). Перейти к ней?",
         "description": "In-page restore prompt.",
         "placeholders": {
-            "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "02.01.2026, 15:04:05" }
+            "percent": {
+                "content": "$1",
+                "example": "42.50"
+            },
+            "time": {
+                "content": "$2",
+                "example": "02.01.2026, 15:04:05"
+            }
         }
     },
     "jump": {

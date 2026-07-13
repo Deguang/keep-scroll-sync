@@ -1,6 +1,6 @@
 {
     "extName": {
-        "message": "स्क्रॉल स्थिति सिंक करें",
+        "message": "स्क्रॉल सिंक: सभी डिवाइस पर स्थिति",
         "description": "Extension name."
     },
     "extDescription": {
@@ -8,7 +8,7 @@
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "स्क्रॉल स्थिति सिंक",
+        "message": "Scroll Sync",
         "description": "Popup title."
     },
     "saveBtn": {
@@ -51,8 +51,14 @@
         "message": "सबसे दूर पढ़ी गई स्थिति $PERCENT$% ($TIME$) है। उस स्थिति पर जाएं?",
         "description": "In-page restore prompt.",
         "placeholders": {
-            "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "2/1/2026, 3:04:05 pm" }
+            "percent": {
+                "content": "$1",
+                "example": "42.50"
+            },
+            "time": {
+                "content": "$2",
+                "example": "2/1/2026, 3:04:05 pm"
+            }
         }
     },
     "jump": {

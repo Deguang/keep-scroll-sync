@@ -1,6 +1,6 @@
 {
     "extName": {
-        "message": "スクロール位置を同期",
+        "message": "スクロール同期：デバイス間で位置を保持",
         "description": "Extension name."
     },
     "extDescription": {
@@ -8,7 +8,7 @@
         "description": "Extension description."
     },
     "appTitle": {
-        "message": "スクロール位置を同期",
+        "message": "Scroll Sync",
         "description": "Popup title."
     },
     "saveBtn": {
@@ -51,8 +51,14 @@
         "message": "最も読み進めた位置は $PERCENT$%（$TIME$）です。その位置に移動しますか？",
         "description": "In-page restore prompt.",
         "placeholders": {
-            "percent": { "content": "$1", "example": "42.50" },
-            "time": { "content": "$2", "example": "2026/1/2 15:04:05" }
+            "percent": {
+                "content": "$1",
+                "example": "42.50"
+            },
+            "time": {
+                "content": "$2",
+                "example": "2026/1/2 15:04:05"
+            }
         }
     },
     "jump": {

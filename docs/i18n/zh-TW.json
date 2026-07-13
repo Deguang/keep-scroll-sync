@@ -2,9 +2,9 @@
   "htmlLang": "zh-Hant",
   "langLabel": "繁體中文",
   "canonical": "https://deguang.github.io/keep-scroll-sync/zh-TW.html",
-  "title": "同步閱讀進度 — 再也不會讀丟位置",
+  "title": "Scroll Sync — 再也不會讀丟位置",
   "description": "在任意網頁儲存你的捲動位置,並透過 Chrome 帳戶在多裝置間同步。隱私優先,資料不外傳。",
-  "ogTitle": "同步閱讀進度",
+  "ogTitle": "Scroll Sync",
   "ogDescription": "跨裝置同步,再也不會讀丟位置。",
   "nav": { "features": "功能", "privacy": "隱私", "github": "GitHub" },
   "hero": {
@@ -22,5 +22,5 @@
     { "icon": "⚡", "title": "輕量", "desc": "小巧專注的擴充功能,把一件事做好,絕不打擾你。" }
   ],
   "ctaTitle": "從上次停下的地方繼續。",
-  "footer": { "copyright": "© 2026 同步閱讀進度", "privacy": "隱私政策", "github": "GitHub", "feedback": "意見回饋" }
+  "footer": { "copyright": "© 2026 Scroll Sync", "privacy": "隱私政策", "github": "GitHub", "feedback": "意見回饋" }
 }
